@@ -70,3 +70,14 @@ ls
 cd mini_pupper/
 sudo python3 display_only.py 
 /bin/python /home/ubuntu/mini_pupper_bsp/Python_Module/MangDang/mini_pupper/display_only.py
+sudo python3 display_only.py 
+git add .
+cd ~
+git checkout main
+git add /
+git add .
+git commit -m "new"
+git push origin main
+git add .
+git commit -m "new"
+git push origin main

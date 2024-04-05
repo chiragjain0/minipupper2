@@ -1,0 +1,21 @@
+2024-04-05 22:03:49.215 [info] (Client) Pylance async client (2024.4.1) started with python extension (2024.4.0)
+2024-04-05 22:03:51.347 [info] [Info  - 10:03:51 PM] (2749) Pylance language server 2024.4.1 (pyright version 1.1.356, commit 6652c4a8) starting
+2024-04-05 22:03:51.349 [info] [Info  - 10:03:51 PM] (2749) Server root directory: file:///home/ubuntu/.vscode-server/extensions/ms-python.vscode-pylance-2024.4.1/dist
+2024-04-05 22:03:51.381 [info] [Info  - 10:03:51 PM] (2749) Starting service instance "mini_pupper_bsp"
+2024-04-05 22:03:51.694 [info] [Info  - 10:03:51 PM] (2749) Setting pythonPath for service "mini_pupper_bsp": "/bin/python"
+2024-04-05 22:03:51.695 [info] [Info  - 10:03:51 PM] (2749) Setting environmentName for service "mini_pupper_bsp": "3.10.12 (global)"
+2024-04-05 22:03:51.863 [info] [Info  - 10:03:51 PM] (2749) Assuming Python version 3.10.12.final.0
+2024-04-05 22:03:52.430 [info] [Info  - 10:03:52 PM] (2749) Found 64 source files
+2024-04-05 22:03:54.891 [info] [Info  - 10:03:54 PM] (2749) Background analysis(1) root directory: file:///home/ubuntu/.vscode-server/extensions/ms-python.vscode-pylance-2024.4.1/dist
+2024-04-05 22:03:55.264 [info] [Info  - 10:03:55 PM] (2749) Background analysis(1) started
+2024-04-05 22:03:56.221 [info] [Info  - 10:03:56 PM] (2749) Indexer background runner(2) root directory: file:///home/ubuntu/.vscode-server/extensions/ms-python.vscode-pylance-2024.4.1/dist (index)
+2024-04-05 22:03:56.224 [info] [Info  - 10:03:56 PM] (2749) Indexing(2) started
+2024-04-05 22:04:04.414 [info] [Info  - 10:04:04 PM] (2749) [IDX(2)] Long operation: scan packages file:///home/ubuntu/mini_pupper_bsp (8056ms)
+2024-04-05 22:04:04.415 [info] [Info  - 10:04:04 PM] (2749) scanned(2) 113 files over 1 exec env
+2024-04-05 22:04:10.797 [info] [Info  - 10:04:10 PM] (2749) [BG(1)] Long operation: checking: file:///home/ubuntu/mini_pupper_bsp/Python_Module/MangDang/mini_pupper/display_only.py (12252ms)
+2024-04-05 22:04:10.799 [info] [Info  - 10:04:10 PM] (2749) [BG(1)] Long operation: analyzing: file:///home/ubuntu/mini_pupper_bsp/Python_Module/MangDang/mini_pupper/display_only.py (15001ms)
+2024-04-05 22:04:16.003 [info] [Info  - 10:04:16 PM] (2749) [IDX(2)] Long operation: indexing: file:///home/ubuntu/.vscode-server/extensions/ms-python.vscode-pylance-2024.4.1/dist/typeshed-fallback/stubs/networkx/networkx/__init__.pyi (2711ms)
+2024-04-05 22:04:21.497 [info] [Info  - 10:04:21 PM] (2749) [IDX(2)] Long operation: index execution environment file:///home/ubuntu/mini_pupper_bsp (10979ms)
+2024-04-05 22:04:21.635 [info] [Info  - 10:04:21 PM] (2749) [IDX(2)] Long operation: index packages file:///home/ubuntu/mini_pupper_bsp (11235ms)
+2024-04-05 22:04:21.636 [info] [Info  - 10:04:21 PM] (2749) indexed(2) 73 files over 1 exec env
+2024-04-05 22:04:22.512 [info] [Info  - 10:04:22 PM] (2749) Indexing finished(2).

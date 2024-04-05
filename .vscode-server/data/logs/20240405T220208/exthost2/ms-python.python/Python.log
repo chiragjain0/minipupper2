@@ -1,0 +1,25 @@
+2024-04-05 22:03:44.873 [info] Experiment 'pythonRecommendTensorboardExt' is active
+2024-04-05 22:03:44.874 [info] Experiment 'pythonREPLSmartSend' is active
+2024-04-05 22:03:44.874 [info] Experiment 'pythonSurveyNotification' is active
+2024-04-05 22:03:44.874 [info] Experiment 'pythonTerminalEnvVarActivation' is active
+2024-04-05 22:03:44.874 [info] Experiment 'pythonTestAdapter' is active
+2024-04-05 22:03:45.355 [info] Default formatter is set to null for workspace /home/ubuntu/mini_pupper_bsp
+2024-04-05 22:03:47.337 [info] Test server listening.
+2024-04-05 22:03:47.411 [info] > conda info --json
+2024-04-05 22:03:47.461 [info] > hatch env show --json
+2024-04-05 22:03:47.461 [info] cwd: .
+2024-04-05 22:03:47.651 [info] > pyenv which python
+2024-04-05 22:03:47.651 [info] cwd: .
+2024-04-05 22:03:47.743 [info] Found: /bin/python --> /bin/python3.10
+2024-04-05 22:03:47.747 [info] Found: /bin/python3 --> /bin/python3.10
+2024-04-05 22:03:47.749 [info] Found: /bin/python3.10 --> /bin/python3.10
+2024-04-05 22:03:47.872 [info] Found: /usr/bin/python --> /usr/bin/python3.10
+2024-04-05 22:03:47.874 [info] Found: /usr/bin/python3 --> /usr/bin/python3.10
+2024-04-05 22:03:47.875 [info] Found: /usr/bin/python3.10 --> /usr/bin/python3.10
+2024-04-05 22:03:47.969 [info] > /bin/python -I ~/.vscode-server/extensions/ms-python.python-2024.4.0/python_files/get_output_via_markers.py ~/.vscode-server/extensions/ms-python.python-2024.4.0/python_files/interpreterInfo.py
+2024-04-05 22:03:48.042 [info] > /usr/bin/python -I ~/.vscode-server/extensions/ms-python.python-2024.4.0/python_files/get_output_via_markers.py ~/.vscode-server/extensions/ms-python.python-2024.4.0/python_files/interpreterInfo.py
+2024-04-05 22:03:48.242 [info] Python interpreter path: /bin/python
+2024-04-05 22:03:51.563 [info] Starting Pylance language server.
+2024-04-05 22:04:31.820 [info] Send text to terminal: /bin/python /home/ubuntu/mini_pupper_bsp/Python_Module/MangDang/mini_pupper/display_only.py
+2024-04-05 22:05:41.499 [info] Send text to terminal: /bin/python /home/ubuntu/mini_pupper_bsp/Python_Module/MangDang/mini_pupper/display_only.py
+2024-04-05 22:07:02.366 [info] Send text to terminal: /bin/python /home/ubuntu/mini_pupper_bsp/Python_Module/MangDang/mini_pupper/display_only.py

@@ -1,0 +1,11 @@
+2024-04-05 22:11:23.406 [info] Experiment 'pythonRecommendTensorboardExt' is active
+2024-04-05 22:11:23.410 [info] Experiment 'pythonREPLSmartSend' is active
+2024-04-05 22:11:23.410 [info] Experiment 'pythonSurveyNotification' is active
+2024-04-05 22:11:23.410 [info] Experiment 'pythonTerminalEnvVarActivation' is active
+2024-04-05 22:11:23.411 [info] Experiment 'pythonTestAdapter' is active
+2024-04-05 22:11:23.411 [info] Default formatter is set to null for workspace /home/ubuntu/mini_pupper_bsp
+2024-04-05 22:11:23.411 [info] Test server listening.
+2024-04-05 22:11:23.412 [info] Python interpreter path: /bin/python
+2024-04-05 22:11:24.128 [info] > pyenv which python
+2024-04-05 22:11:24.128 [info] cwd: .
+2024-04-05 22:11:28.509 [info] Starting Pylance language server.

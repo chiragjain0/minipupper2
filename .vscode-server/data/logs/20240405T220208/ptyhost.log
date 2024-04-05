@@ -45,3 +45,22 @@
 2024-04-05 22:11:19.073 [info] Persistent process "26": Replaying 389 chars and 1 size events
 2024-04-05 22:11:19.136 [info] Persistent process "27": Replaying 749 chars and 1 size events
 2024-04-05 22:11:19.217 [info] Persistent process "28": Replaying 1383 chars and 1 size events
+2024-04-05 22:16:30.801 [info] Expanding terminal instance, old id d92f8f1d17a3e73b6046c083629a7176-25 -> new id undefined
+2024-04-05 22:16:30.803 [info] Expanding terminal instance, old id d92f8f1d17a3e73b6046c083629a7176-26 -> new id undefined
+2024-04-05 22:16:30.804 [info] Expanding terminal instance, old id d92f8f1d17a3e73b6046c083629a7176-27 -> new id undefined
+2024-04-05 22:16:30.804 [info] Expanding terminal instance, old id d92f8f1d17a3e73b6046c083629a7176-28 -> new id undefined
+2024-04-05 22:16:30.806 [info] Expanding terminal instance, old id d92f8f1d17a3e73b6046c083629a7176-35 -> new id undefined
+2024-04-05 22:16:32.019 [warning] Shell integration cannot be enabled for executable "/bin/sh" and args ["-c","wget --version > /dev/null\nif [ $? -eq 0 ]\nthen\n\twget --connect-timeout=7 --tries=1 --dns-timeout=7 -q --header='Metadata:true' -O - http://169.254.169.254/metadata/instance?api-version=2019-03-11\nelse\n\tcurl --version > /dev/null\n\tif [ $? -eq 0 ]\n\tthen\n\t\tcurl --connect-timeout 7 -s --header='Metadata:true' http://169.254.169.254/metadata/instance?api-version=2019-03-11\n\tfi\nfi\nexit 0"]
+2024-04-05 22:16:32.042 [warning] Shell integration cannot be enabled for executable "/bin/sh" and args ["-c","wget --version > /dev/null\nif [ $? -eq 0 ]\nthen\n\twget --connect-timeout=7 --tries=1 --dns-timeout=7 -q  -O - http://169.254.169.254/latest/meta-data/instance-id\nelse\n\tcurl --version > /dev/null\n\tif [ $? -eq 0 ]\n\tthen\n\t\tcurl --connect-timeout 7 -s  http://169.254.169.254/latest/meta-data/instance-id\n\tfi\nfi\nexit 0"]
+2024-04-05 22:16:32.069 [warning] Shell integration cannot be enabled for executable "/bin/sh" and args ["-c","wget --version > /dev/null\nif [ $? -eq 0 ]\nthen\n\twget --connect-timeout=7 --tries=1 --dns-timeout=7 -q  -O - http://169.254.169.254/metadata/v1/id\nelse\n\tcurl --version > /dev/null\n\tif [ $? -eq 0 ]\n\tthen\n\t\tcurl --connect-timeout 7 -s  http://169.254.169.254/metadata/v1/id\n\tfi\nfi\nexit 0"]
+2024-04-05 22:16:32.102 [warning] Shell integration cannot be enabled for executable "/bin/sh" and args ["-c","wget --version > /dev/null\nif [ $? -eq 0 ]\nthen\n\twget --connect-timeout=7 --tries=1 --dns-timeout=7 -q --header='Metadata-Flavor:Google' -O - http://metadata.google.internal/computeMetadata/v1/instance/id\nelse\n\tcurl --version > /dev/null\n\tif [ $? -eq 0 ]\n\tthen\n\t\tcurl --connect-timeout 7 -s --header='Metadata-Flavor:Google' http://metadata.google.internal/computeMetadata/v1/instance/id\n\tfi\nfi\nexit 0"]
+2024-04-05 22:16:34.800 [info] Persistent process reconnection "25"
+2024-04-05 22:16:34.802 [info] Persistent process reconnection "35"
+2024-04-05 22:16:34.803 [info] Persistent process reconnection "26"
+2024-04-05 22:16:34.803 [info] Persistent process reconnection "27"
+2024-04-05 22:16:34.806 [info] Persistent process reconnection "28"
+2024-04-05 22:16:34.992 [info] Persistent process "25": Replaying 3734 chars and 1 size events
+2024-04-05 22:16:35.001 [info] Persistent process "35": Replaying 10459 chars and 1 size events
+2024-04-05 22:16:35.068 [info] Persistent process "26": Replaying 493 chars and 1 size events
+2024-04-05 22:16:35.068 [info] Persistent process "27": Replaying 853 chars and 1 size events
+2024-04-05 22:16:35.072 [info] Persistent process "28": Replaying 1452 chars and 1 size events

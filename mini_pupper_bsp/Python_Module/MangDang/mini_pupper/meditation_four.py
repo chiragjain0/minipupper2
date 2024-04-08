@@ -1,7 +1,7 @@
 from UDPComms import Publisher
 import pygame
 import netifaces as ni
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFont, ImageOps
 from enum import Enum
 from MangDang.LCD.ST7789 import ST7789
 import sounddevice as sd
@@ -61,8 +61,9 @@ class Display:
 
     def show_image(self, image_path):
         image = Image.open(image_path)
-        image.resize((320, 240))
-        self.disp.display(image)
+        im2 = ImageOps.fit(image, (320,240),method=0,bleed = 0.0, centering = (0.5,0.5))
+        im2.resize((320, 240))
+        self.disp.display(im2)
     
     def show_ip(self):
         image_path = "%s/%s" % (self.image_dir, self.state_to_image(BehaviorState.IP))

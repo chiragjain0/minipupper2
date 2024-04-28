@@ -66,6 +66,9 @@ if __name__ == "__main__":
     msg,counter_a = toggle_activation(counter_a)
     pub_msg(msg, wait_time)
 
+    msg = reset()
+    pub_msg(msg , wait_time)
+
 
 
 

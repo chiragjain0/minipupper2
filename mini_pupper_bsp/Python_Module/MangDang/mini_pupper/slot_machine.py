@@ -48,11 +48,26 @@ if __name__ == "__main__":
     msg,counter_m = toggle_movement(counter_m)
     pub_msg(msg,wait_time)
 
+
+    msg,counter_m = toggle_movement(counter_m)
+    pub_msg(msg,wait_time)
+
+    msg,counter_a = toggle_activation(counter_a)
+    pub_msg(msg, wait_time)
+
     msg,counter_a = toggle_activation(counter_a)
     pub_msg(msg, wait_time)
 
     msg,counter_m = toggle_movement(counter_m)
     pub_msg(msg,wait_time)
+
+
+    msg,counter_m = toggle_movement(counter_m)
+    pub_msg(msg,wait_time)
+
+    msg,counter_a = toggle_activation(counter_a)
+    pub_msg(msg, wait_time)
+
 
 
 

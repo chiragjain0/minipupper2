@@ -33,10 +33,10 @@ def reset():
 
 def toggle_activation(counter_a):
         counter_a += 1
-        if(counter_a%2):
-             print("turned off pupper")
-        else :
-             print("pupper turned on")         
+        # if(counter_a%2):
+        #      print("turned on pupper")
+        # else :
+        #      print("pupper turned off")         
         msg = {
             "ly": 0,
             "lx": 0,
@@ -58,10 +58,10 @@ def toggle_activation(counter_a):
 
 def toggle_movement(counter_m):
         counter_m += 1
-        if(counter_m%2):
-             print("turned off movement")
-        else :
-             print("movement turned on") 
+        # if(counter_m%2):
+        #      print("turned on movement")
+        # else :
+        #      print("movement turned off") 
         msg = {
             "ly": 0,
             "lx": 0,

@@ -9,6 +9,7 @@ import soundfile as sf
 import time
 import os
 from display import Display
+import helper_movement
 from helper_movement import *
 
 def pygame_stuff():

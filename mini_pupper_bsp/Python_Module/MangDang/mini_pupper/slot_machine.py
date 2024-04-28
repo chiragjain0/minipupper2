@@ -63,6 +63,12 @@ if __name__ == "__main__":
     msg = movement_rx(0.3)
     pub_msg(msg,wait_time)
 
+    msg = movement_rx(0.3)
+    pub_msg(msg,wait_time)
+
+    msg = movement_rx(0.3)
+    pub_msg(msg,wait_time)
+
     msg = {
             "ly": 0,
             "lx": 0,

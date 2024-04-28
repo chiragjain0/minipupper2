@@ -31,8 +31,7 @@ def reset():
     }
     return msg
 
-def toggle_activation():
-        counter_a = 0
+def toggle_activation(counter_a):
         counter_a += 1
         if(counter_a%2):
              print("turned off pupper")
@@ -57,8 +56,7 @@ def toggle_activation():
         }
         return msg,counter_a%2
 
-def toggle_movement():
-        counter_m = 0
+def toggle_movement(counter_m):
         counter_m += 1
         if(counter_m%2):
              print("turned off movement")

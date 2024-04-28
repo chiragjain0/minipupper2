@@ -1,4 +1,15 @@
+from UDPComms import Publisher
+pub = Publisher(8830)
+import pygame
+
+
 MESSAGE_RATE = 20
+
+def pub_msg(msg,wait_time):
+    pub.send(msg)
+    #pygame.display.flip()
+    pygame.time.wait(int(1000/MESSAGE_RATE))
+    pygame.time.wait(wait_time)
 
 def reset():
     msg = {
@@ -21,6 +32,11 @@ def reset():
     return msg
 
 def toggle_activation():
+        counter += 1
+        if(counter%2):
+             print("turned off pupper")
+        else :
+             print("pupper turned on")         
         msg = {
             "ly": 0,
             "lx": 0,
@@ -38,9 +54,14 @@ def toggle_activation():
             "triangle": 0,
             "message_rate": MESSAGE_RATE,
         }
-        return msg
+        return msg,counter%2
 
 def toggle_movement():
+        counter += 1
+        if(counter%2):
+             print("turned off movement")
+        else :
+             print("movement turned on") 
         msg = {
             "ly": 0,
             "lx": 0,
@@ -58,7 +79,7 @@ def toggle_movement():
             "triangle": 0,
             "message_rate": MESSAGE_RATE,
         }
-        return msg
+        return msg,counter%2
 
 def movement_dpapx_negative():
     msg = {

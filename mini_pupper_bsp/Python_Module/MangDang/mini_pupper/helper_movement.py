@@ -4,6 +4,8 @@ import pygame
 
 
 MESSAGE_RATE = 20
+counter_a = 0
+counter_m = 0
 
 def pub_msg(msg,wait_time):
     pub.send(msg)
@@ -32,8 +34,8 @@ def reset():
     return msg
 
 def toggle_activation():
-        counter += 1
-        if(counter%2):
+        counter_a += 1
+        if(counter_a%2):
              print("turned off pupper")
         else :
              print("pupper turned on")         
@@ -54,11 +56,11 @@ def toggle_activation():
             "triangle": 0,
             "message_rate": MESSAGE_RATE,
         }
-        return msg,counter%2
+        return msg,counter_a%2
 
 def toggle_movement():
-        counter += 1
-        if(counter%2):
+        counter_m += 1
+        if(counter_m%2):
              print("turned off movement")
         else :
              print("movement turned on") 
@@ -79,7 +81,7 @@ def toggle_movement():
             "triangle": 0,
             "message_rate": MESSAGE_RATE,
         }
-        return msg,counter%2
+        return msg,counter_m%2
 
 def movement_dpapx_negative():
     msg = {

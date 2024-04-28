@@ -9,7 +9,6 @@ import soundfile as sf
 import time
 import os
 from display import Display
-import helper_movement
 from helper_movement import *
 
 def pygame_stuff():
@@ -30,7 +29,9 @@ if __name__ == "__main__":
     disp = Display()
     pygame.event.pump()
     wait_time = 500
-
+    MESSAGE_RATE = 20
+    counter_a = 0
+    counter_m = 0
     rx_ = 0.0
     ry_ = 0.0
     lx_ = 0.0

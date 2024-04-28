@@ -179,7 +179,7 @@ if __name__ == "__main__":
     pygame.time.wait(int(1000/MESSAGE_RATE))
     pygame.time.wait(500)
     
-    for i in range(0,30):
+    for i in range(0,1):
         msg = {
                 "ly": 0,
                 "lx": 0,
@@ -204,7 +204,7 @@ if __name__ == "__main__":
         pygame.time.wait(500)
         #disp.show_image('birdie.png')
 
-    for i in range(0,30):
+    for i in range(0,1):
         msg = {
                 "ly": 0,
                 "lx": 0,

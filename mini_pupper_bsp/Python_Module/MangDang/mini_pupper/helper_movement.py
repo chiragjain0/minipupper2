@@ -238,3 +238,23 @@ def movement_ly(val):
         "message_rate": 20,
     }
     return msg
+
+def movement_rx_ry(val_rx, val_ry):  
+    msg = {
+        "ly": 0,
+        "lx": 0,
+        "rx": val_rx,#counter
+        "ry": val_ry,#clockwise
+        "L2": 0,
+        "R2": 0,
+        "R1": 0,
+        "L1": 0,
+        "dpady": 0,
+        "dpadx": 0,
+        "x": 0,
+        "square": 0,
+        "circle": 0,
+        "triangle": 0,
+        "message_rate": 20,
+    }
+    return msg

@@ -69,7 +69,7 @@ if __name__ == "__main__":
     # msg = movement_rx(0.3)
     # pub_msg(msg,wait_time)
 
-    audio_file = 'audio_files/hello-how-are-you.wav'
+    audio_file = 'audio_files/hello-how-are-you.mp3'
     play_audio(audio_file)
 
     msg = {

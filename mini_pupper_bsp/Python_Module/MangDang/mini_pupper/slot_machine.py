@@ -23,6 +23,15 @@ def pygame_stuff():
     win.fill((255, 255, 255))
     win.blit(text_surface, (40, 100))
 
+def play_audio(filename):
+    fs = 48000  # 48KHz, Audio sampling rate
+    duration = 5  # Recording duration in seconds
+    # Extract data and sampling rate from file
+    data, fs = sf.read(filename, dtype='float32')
+    print("Mini Pupper 2 audio playback start...")
+    sd.play(data, fs)
+    sd.wait()
+
 if __name__ == "__main__":
     pub = Publisher(8830)
     pygame_stuff()
@@ -56,6 +65,9 @@ if __name__ == "__main__":
 
     msg = movement_dpapy_positive()
     pub_msg(msg,wait_time)
+
+    #audio_file = 'audio_file.wav'
+    #play_audio(audio_file)
 
     msg = movement_dpapy_negative()
     pub_msg(msg,wait_time)

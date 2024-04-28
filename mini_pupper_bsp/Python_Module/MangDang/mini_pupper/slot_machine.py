@@ -57,19 +57,10 @@ if __name__ == "__main__":
     msg,counter_m = toggle_movement(counter_m)
     pub_msg(msg,wait_time)
 
-    msg = movement_dpapx_negative()
+    msg = movement_rx(0.3)
     pub_msg(msg,wait_time)
 
-    msg = movement_dpapx_positive()
-    pub_msg(msg,wait_time)
-
-    msg = movement_dpapy_positive()
-    pub_msg(msg,wait_time)
-
-    #audio_file = 'audio_file.wav'
-    #play_audio(audio_file)
-
-    msg = movement_dpapy_negative()
+    msg = movement_rx(0.3)
     pub_msg(msg,wait_time)
 
     msg = {

@@ -51,23 +51,23 @@ if __name__ == "__main__":
     msg = reset()
     pub_msg(msg , wait_time)
 
-    msg,counter_a = toggle_activation(counter_a)
-    pub_msg(msg, wait_time)
+    # msg,counter_a = toggle_activation(counter_a)
+    # pub_msg(msg, wait_time)
 
-    msg,counter_m = toggle_movement(counter_m)
-    pub_msg(msg,wait_time)
+    # msg,counter_m = toggle_movement(counter_m)
+    # pub_msg(msg,wait_time)
 
-    msg = movement_rx(0.3)
-    pub_msg(msg,wait_time)
+    # msg = movement_rx(0.3)
+    # pub_msg(msg,wait_time)
 
-    msg = movement_rx(0.3)
-    pub_msg(msg,wait_time)
+    # msg = movement_rx(0.3)
+    # pub_msg(msg,wait_time)
 
-    msg = movement_rx(0.3)
-    pub_msg(msg,wait_time)
+    # msg = movement_rx(0.3)
+    # pub_msg(msg,wait_time)
 
-    msg = movement_rx(0.3)
-    pub_msg(msg,wait_time)
+    # msg = movement_rx(0.3)
+    # pub_msg(msg,wait_time)
 
     audio_file = 'audio_files/hello-how-are-you.wav'
     play_audio(audio_file)

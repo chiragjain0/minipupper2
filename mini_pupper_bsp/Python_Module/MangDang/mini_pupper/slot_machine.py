@@ -45,7 +45,7 @@ if __name__ == "__main__":
     ry_ = 0.0
     lx_ = 0.0
     ly_ = 0.0
-
+    os.system("amixer -c 0 sset 'Headphone' 100%")
     disp.show_image('moonphases/moon11.png')
 
     msg = reset()

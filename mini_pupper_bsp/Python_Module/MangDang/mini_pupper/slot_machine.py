@@ -72,8 +72,47 @@ if __name__ == "__main__":
     msg = movement_dpapy_negative()
     pub_msg(msg,wait_time)
 
+    msg = {
+            "ly": 0,
+            "lx": 0,
+            "rx": 0,
+            "ry": 0,
+            "L2": 0,
+            "R2": 0,
+            "R1": 1,
+            "L1": 0,
+            "dpady": 0,
+            "dpadx": 0,
+            "x": 0,
+            "square": 0,
+            "circle": 0,
+            "triangle": 0,
+            "message_rate": 20,
+        }
+    pub.send(msg)
+    #pygame.display.flip()
+    pygame.time.wait(int(1000/20))
 
-    turn_off()
+    msg = {
+            "ly": 0,
+            "lx": 0,
+            "rx": 0,
+            "ry": 0,
+            "L2": 0,
+            "R2": 0,
+            "R1": 0,
+            "L1": 1,
+            "dpady": 0,
+            "dpadx": 0,
+            "x": 0,
+            "square": 0,
+            "circle": 0,
+            "triangle": 0,
+            "message_rate": 20,
+        }
+    pub.send(msg)
+    #pygame.display.flip()
+    pygame.time.wait(int(1000/20))
 
 
 

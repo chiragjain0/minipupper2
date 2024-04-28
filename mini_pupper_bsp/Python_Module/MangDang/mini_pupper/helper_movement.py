@@ -3,14 +3,12 @@ pub = Publisher(8830)
 import pygame
 
 
-MESSAGE_RATE = 20
-counter_a = 0
-counter_m = 0
+
 
 def pub_msg(msg,wait_time):
     pub.send(msg)
     #pygame.display.flip()
-    pygame.time.wait(int(1000/MESSAGE_RATE))
+    pygame.time.wait(int(1000/20))
     pygame.time.wait(wait_time)
 
 def reset():
@@ -29,11 +27,12 @@ def reset():
         "square": 0,
         "circle": 0,
         "triangle": 0,
-        "message_rate": MESSAGE_RATE,
+        "message_rate": 20,
     }
     return msg
 
 def toggle_activation():
+        counter_a = 0
         counter_a += 1
         if(counter_a%2):
              print("turned off pupper")
@@ -54,11 +53,12 @@ def toggle_activation():
             "square": 0,
             "circle": 0,
             "triangle": 0,
-            "message_rate": MESSAGE_RATE,
+            "message_rate": 20,
         }
         return msg,counter_a%2
 
 def toggle_movement():
+        counter_m = 0
         counter_m += 1
         if(counter_m%2):
              print("turned off movement")
@@ -79,7 +79,7 @@ def toggle_movement():
             "square": 0,
             "circle": 0,
             "triangle": 0,
-            "message_rate": MESSAGE_RATE,
+            "message_rate": 20,
         }
         return msg,counter_m%2
 
@@ -99,7 +99,7 @@ def movement_dpapx_negative():
         "square": 0,
         "circle": 0,
         "triangle": 0,
-        "message_rate": MESSAGE_RATE,
+        "message_rate": 20,
     }
     return msg
 
@@ -119,7 +119,7 @@ def movement_dpapx_positive():
         "square": 0,
         "circle": 0,
         "triangle": 0,
-        "message_rate": MESSAGE_RATE,
+        "message_rate": 20,
     }
     return msg
 
@@ -139,7 +139,7 @@ def movement_dpapy_positive():
         "square": 0,
         "circle": 0,
         "triangle": 0,
-        "message_rate": MESSAGE_RATE,
+        "message_rate": 20,
     }
 
 def movement_dpapy_negative():
@@ -158,7 +158,7 @@ def movement_dpapy_negative():
         "square": 0,
         "circle": 0,
         "triangle": 0,
-        "message_rate": MESSAGE_RATE,
+        "message_rate": 20,
     }
 
 def movement_rx(val):  
@@ -177,7 +177,7 @@ def movement_rx(val):
         "square": 0,
         "circle": 0,
         "triangle": 0,
-        "message_rate": MESSAGE_RATE,
+        "message_rate": 20,
     }
     return msg
 
@@ -197,7 +197,7 @@ def movement_ry(val):
         "square": 0,
         "circle": 0,
         "triangle": 0,
-        "message_rate": MESSAGE_RATE,
+        "message_rate": 20,
     }
     return msg
 
@@ -217,7 +217,7 @@ def movement_lx(val):
         "square": 0,
         "circle": 0,
         "triangle": 0,
-        "message_rate": MESSAGE_RATE,
+        "message_rate": 20,
     }
     return msg
 
@@ -237,6 +237,6 @@ def movement_ly(val):
         "square": 0,
         "circle": 0,
         "triangle": 0,
-        "message_rate": MESSAGE_RATE,
+        "message_rate": 20,
     }
     return msg

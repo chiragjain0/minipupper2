@@ -12,7 +12,7 @@ from display import Display
 from helper_movement import *
 import time
 import RPi.GPIO as GPIO
-import sys,select
+import keyboard
 
 def key_pressed():
     return select.select([sys.stdin], [], [], 0) == ([sys.stdin], [], [])
@@ -136,6 +136,7 @@ if __name__ == "__main__":
             pub_msg(msg,wait_time)
         if not touchValue_Back:
             display_sting += ' Back'
+            break
         if not touchValue_Right:
             display_sting += ' Right'
         if not touchValue_Left:

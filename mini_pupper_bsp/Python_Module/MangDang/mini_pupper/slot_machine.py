@@ -12,10 +12,7 @@ from display import Display
 from helper_movement import *
 import time
 import RPi.GPIO as GPIO
-import keyboard
 
-def key_pressed():
-    return select.select([sys.stdin], [], [], 0) == ([sys.stdin], [], [])
 
 def touch_init():
     # There are 4 areas for touch actions
@@ -124,7 +121,7 @@ if __name__ == "__main__":
     # audio_file = 'audio_files/gettysburg.wav'
     # play_audio(audio_file)
 
-    while not key_pressed():
+    while True:
         touchValue_Front = GPIO.input(touchPin_Front)
         touchValue_Back  = GPIO.input(touchPin_Back)
         touchValue_Left  = GPIO.input(touchPin_Left)

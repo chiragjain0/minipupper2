@@ -127,17 +127,23 @@ if __name__ == "__main__":
         touchValue_Left  = GPIO.input(touchPin_Left)
         touchValue_Right = GPIO.input(touchPin_Right)
         display_sting = ''
+
         if not touchValue_Front:
             display_sting += ' Front'
-            msg = movement_rx_ry(0.3,0.3)
-            pub_msg(msg,wait_time)
+
         if not touchValue_Back:
             display_sting += ' Back'
             break
+
         if not touchValue_Right:
             display_sting += ' Right'
+            msg = movement_rx_ry(0.3,0.3)
+            pub_msg(msg,wait_time)
+
         if not touchValue_Left:
             display_sting += ' Left'
+            msg = movement_rx_ry(-0.3,-0.3)
+            pub_msg(msg,wait_time)
 
         if display_sting == '':
             display_sting = 'No button touched'

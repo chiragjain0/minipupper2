@@ -12,10 +12,10 @@ from display import Display
 from helper_movement import *
 import time
 import RPi.GPIO as GPIO
-import msvcrt
+import sys,select
 
 def key_pressed():
-    return msvcrt.kbhit()
+    return select.select([sys.stdin], [], [], 0) == ([sys.stdin], [], [])
 
 def touch_init():
     # There are 4 areas for touch actions

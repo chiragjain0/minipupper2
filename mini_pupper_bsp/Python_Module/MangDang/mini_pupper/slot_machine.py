@@ -12,6 +12,10 @@ from display import Display
 from helper_movement import *
 import time
 import RPi.GPIO as GPIO
+import msvcrt
+
+def key_pressed():
+    return msvcrt.kbhit()
 
 def touch_init():
     # There are 4 areas for touch actions
@@ -120,7 +124,7 @@ if __name__ == "__main__":
     # audio_file = 'audio_files/gettysburg.wav'
     # play_audio(audio_file)
 
-    while True:
+    while not key_pressed():
         touchValue_Front = GPIO.input(touchPin_Front)
         touchValue_Back  = GPIO.input(touchPin_Back)
         touchValue_Left  = GPIO.input(touchPin_Left)
@@ -141,28 +145,6 @@ if __name__ == "__main__":
             display_sting = 'No button touched'
         print(display_sting)
         time.sleep(0.5)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     msg = {
             "ly": 0,

@@ -79,14 +79,11 @@ if __name__ == "__main__":
     msg,counter_m = toggle_movement(counter_m)
     pub_msg(msg,wait_time)
 
-    msg = movement_lx_ly(2.7,1.19)
+    msg = movement_lx_ly(0.27,0.119)
     pub_msg(msg,wait_time)
 
-    msg = movement_lx_ly(2.0,2.0)
+    msg = movement_lx_ly(0.2,0.2)
     pub_msg(msg,wait_time)
-
-    audio_file = 'audio_files/gettysburg.wav'
-    play_audio(audio_file)
 
 
     msg = {

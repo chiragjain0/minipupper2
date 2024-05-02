@@ -93,6 +93,23 @@ if __name__ == "__main__":
         msg = movement_lx_ly(val_lx, val_ly)
         pub_msg(msg,wait_time)
 
+    msg,counter_m = toggle_movement(counter_m)
+    pub_msg(msg,wait_time)
+
+    val_lx=0 
+    val_ly = 0
+    r = 1
+    angle_deg = 0
+    points=25
+    for i in range(points):
+        angle_deg += 360/points  #degress
+        angle_red = math.radians(angle_deg)
+        val_lx = r * math.cos(angle_red)
+        val_ly = r * math.sin(angle_red)
+
+        msg = movement_lx_ly(val_lx, val_ly)
+        pub_msg(msg,wait_time)
+
 
     msg = {
             "ly": 0,

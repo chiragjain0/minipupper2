@@ -83,8 +83,9 @@ if __name__ == "__main__":
     val_ly = 0
     r = 1
     angle_deg = 0
-    for i in range(15):
-        angle_deg += 24  #degress
+    points=25
+    for i in range(points):
+        angle_deg += 360/points  #degress
         angle_red = math.radians(angle_deg)
         val_lx = r * math.cos(angle_red)
         val_ly = r * math.sin(angle_red)

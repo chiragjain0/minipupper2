@@ -12,7 +12,7 @@ from display import Display
 from helper_movement import *
 import time
 import RPi.GPIO as GPIO
-
+import math
 
 def touch_init():
     # There are 4 areas for touch actions
@@ -79,11 +79,17 @@ if __name__ == "__main__":
     msg,counter_m = toggle_movement(counter_m)
     pub_msg(msg,wait_time)
 
-    msg = movement_lx_ly(0.27,0.119)
-    pub_msg(msg,wait_time)
+    val_lx, val_ly = 0
+    r = 0.3
+    angle_deg = 0
+    for i in range(15):
+        angle_deg += 24  #degress
+        angle_red = math.radians(angle_deg)
+        val_lx = r * math.cos(angle_red)
+        val_ly = r * math.sin(angle_red)
 
-    msg = movement_lx_ly(0.2,0.2)
-    pub_msg(msg,wait_time)
+        msg = movement_lx_ly(val_lx, val_ly)
+        pub_msg(msg,wait_time)
 
 
     msg = {

@@ -81,7 +81,7 @@ if __name__ == "__main__":
 
     val_lx=0 
     val_ly = 0
-    r = 0.3
+    r = 1
     angle_deg = 0
     for i in range(15):
         angle_deg += 24  #degress

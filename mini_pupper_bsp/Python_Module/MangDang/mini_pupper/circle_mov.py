@@ -107,7 +107,7 @@ if __name__ == "__main__":
         val_lx = r * math.cos(angle_red)
         val_ly = r * math.sin(angle_red)
 
-        msg = movement_lx_ly(val_lx, val_ly)
+        msg = movement_rx_ry(val_lx, val_ly)
         pub_msg(msg,wait_time)
 
 

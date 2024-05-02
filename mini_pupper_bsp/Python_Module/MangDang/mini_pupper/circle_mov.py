@@ -79,7 +79,8 @@ if __name__ == "__main__":
     msg,counter_m = toggle_movement(counter_m)
     pub_msg(msg,wait_time)
 
-    val_lx, val_ly = 0
+    val_lx=0 
+    val_ly = 0
     r = 0.3
     angle_deg = 0
     for i in range(15):

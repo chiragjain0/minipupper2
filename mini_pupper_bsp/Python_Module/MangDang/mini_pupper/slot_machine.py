@@ -55,24 +55,6 @@ def play_audio(filename):
 if __name__ == "__main__":
 
 
-    touchPin_Front = 6
-    touchPin_Left  = 3
-    touchPin_Right = 16
-    touchPin_Back  = 2
-
-    # Use GPIO number but not PIN number
-    GPIO.setmode(GPIO.BCM)
-
-    # Set up GPIO numbers to input
-    GPIO.setup(touchPin_Front, GPIO.IN)
-    GPIO.setup(touchPin_Left,  GPIO.IN)
-    GPIO.setup(touchPin_Right, GPIO.IN)
-    GPIO.setup(touchPin_Back,  GPIO.IN)
-
-
-
-
-
     pub = Publisher(8830)
     pygame_stuff()
     disp = Display()
@@ -94,63 +76,33 @@ if __name__ == "__main__":
     msg,counter_a = toggle_activation(counter_a)
     pub_msg(msg, wait_time)
 
-    #msg,counter_m = toggle_movement(counter_m)
-    #pub_msg(msg,wait_time)
+    msg,counter_m = toggle_movement(counter_m)
+    pub_msg(msg,wait_time)
 
-    # msg = movement_rx_ry(0.3,0.3)
-    # pub_msg(msg,wait_time)
+    msg = movement_rx_ry(0.3,0.3)
+    pub_msg(msg,wait_time)
 
-    # msg = movement_rx_ry(0.3,0.3)
-    # pub_msg(msg,wait_time)
+    msg = movement_rx_ry(0.3,0.3)
+    pub_msg(msg,wait_time)
 
-    # msg = movement_rx_ry(0.3,0.3)
-    # pub_msg(msg,wait_time)
+    msg = movement_rx_ry(0.3,0.3)
+    pub_msg(msg,wait_time)
 
-    # msg = movement_rx_ry(0.3,0.3)
-    # pub_msg(msg,wait_time)
+    msg = movement_rx_ry(0.3,0.3)
+    pub_msg(msg,wait_time)
 
-    # msg = movement_rx_ry(0.3,0.3)
-    # pub_msg(msg,wait_time)
+    msg = movement_rx_ry(0.3,0.3)
+    pub_msg(msg,wait_time)
 
-    # msg = movement_rx_ry(0.3,0.3)
-    # pub_msg(msg,wait_time)
+    msg = movement_rx_ry(0.3,0.3)
+    pub_msg(msg,wait_time)
 
-    # msg,counter_m = toggle_movement(counter_m)
-    # pub_msg(msg,wait_time)
+    msg,counter_m = toggle_movement(counter_m)
+    pub_msg(msg,wait_time)
 
-    # audio_file = 'audio_files/gettysburg.wav'
-    # play_audio(audio_file)
+    audio_file = 'audio_files/gettysburg.wav'
+    play_audio(audio_file)
 
-    while True:
-        touchValue_Front = GPIO.input(touchPin_Front)
-        touchValue_Back  = GPIO.input(touchPin_Back)
-        touchValue_Left  = GPIO.input(touchPin_Left)
-        touchValue_Right = GPIO.input(touchPin_Right)
-        display_sting = ''
-
-        if not touchValue_Front:
-            display_sting += ' Front'
-            disp.show_image('cropped.jpg')
-            play_audio('meme_out.wav')
-
-        if not touchValue_Back:
-            display_sting += ' Back'
-            break
-
-        if not touchValue_Right:
-            display_sting += ' Right'
-            msg = movement_rx_ry(0.3,0.3)
-            pub_msg(msg,wait_time)
-
-        if not touchValue_Left:
-            display_sting += ' Left'
-            msg = movement_rx_ry(-0.3,-0.3)
-            pub_msg(msg,wait_time)
-
-        if display_sting == '':
-            display_sting = 'No button touched'
-        print(display_sting)
-        time.sleep(0.5)
 
     msg = {
             "ly": 0,

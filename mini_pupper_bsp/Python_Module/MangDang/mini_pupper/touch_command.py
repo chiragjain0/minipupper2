@@ -149,7 +149,7 @@ if __name__ == "__main__":
             pub_msg(msg, wait_time)
 
         if not touchValue_Left:
-            counter = 35
+            counter = 40
             counter += 1
             display_sting += ' Left'
             msg = movement_rx_ry(-0.3,-0.3)
@@ -169,7 +169,7 @@ if __name__ == "__main__":
             "ry": 0,
             "L2": 0,
             "R2": 0,
-            "R1": 1,
+            "R1": 0,
             "L1": 0,
             "dpady": 0,
             "dpadx": 0,

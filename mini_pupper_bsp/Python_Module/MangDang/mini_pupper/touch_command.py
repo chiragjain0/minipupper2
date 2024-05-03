@@ -148,6 +148,7 @@ if __name__ == "__main__":
         if not touchValue_Left:
             display_sting += ' Left'
             msg = movement_rx_ry(-0.3,-0.3)
+            disp.show_image('moonphases/moon32.png')
             pub_msg(msg,wait_time)
 
         if display_sting == '':

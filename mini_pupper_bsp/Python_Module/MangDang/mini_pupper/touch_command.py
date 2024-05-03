@@ -121,6 +121,8 @@ if __name__ == "__main__":
     # audio_file = 'audio_files/gettysburg.wav'
     # play_audio(audio_file)
 
+    disp.show_image('moonphases/moon32.png')  #default set to the full moon image
+
     while True:
         touchValue_Front = GPIO.input(touchPin_Front)
         touchValue_Back  = GPIO.input(touchPin_Back)
@@ -140,6 +142,7 @@ if __name__ == "__main__":
         if not touchValue_Right:
             display_sting += ' Right'
             msg = movement_rx_ry(0.3,0.3)
+            disp.show_image('moonphases/moon31.png')
             pub_msg(msg,wait_time)
 
         if not touchValue_Left:

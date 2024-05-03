@@ -134,7 +134,7 @@ if __name__ == "__main__":
 
         if not touchValue_Front:
             display_sting += ' Front'
-            disp.show_state(BehaviorState.REST)
+            disp.show_state(Display.BehaviorState.REST)
             #play_audio('meme_out.wav')
 
         if not touchValue_Back:

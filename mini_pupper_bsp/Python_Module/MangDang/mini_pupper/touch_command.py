@@ -94,8 +94,8 @@ if __name__ == "__main__":
     msg,counter_a = toggle_activation(counter_a)
     pub_msg(msg, wait_time)
 
-    msg,counter_m = toggle_movement(counter_m)
-    pub_msg(msg,wait_time)
+    #msg,counter_m = toggle_movement(counter_m)
+    #pub_msg(msg,wait_time)
 
     # msg = movement_rx_ry(0.3,0.3)
     # pub_msg(msg,wait_time)
@@ -173,7 +173,7 @@ if __name__ == "__main__":
             "ry": 0,
             "L2": 0,
             "R2": 0,
-            "R1": 1,
+            "R1": 0,
             "L1": 0,
             "dpady": 0,
             "dpadx": 0,

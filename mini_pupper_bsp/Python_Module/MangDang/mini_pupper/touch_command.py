@@ -134,8 +134,8 @@ if __name__ == "__main__":
 
         if not touchValue_Front:
             display_sting += ' Front'
-            disp.show_image('cropped.jpg')
-            play_audio('meme_out.wav')
+            disp.show_state(BehaviorState.REST)
+            #play_audio('meme_out.wav')
 
         if not touchValue_Back:
             display_sting += ' Back'

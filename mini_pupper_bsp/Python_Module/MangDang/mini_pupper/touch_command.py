@@ -140,7 +140,7 @@ if __name__ == "__main__":
             break
 
         if not touchValue_Right:
-            counter = 30
+            counter = 34
             display_sting += ' Right'
             msg = movement_rx_ry(0.3, 0.3)
             image_path = f'moonphases/moon{counter}.png'

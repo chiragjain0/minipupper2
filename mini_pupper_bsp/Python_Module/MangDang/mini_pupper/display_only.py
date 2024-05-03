@@ -298,3 +298,4 @@ if __name__ == "__main__":
     pub.send(msg)
     #pygame.display.flip()
     pygame.time.wait(int(1000/MESSAGE_RATE))
+

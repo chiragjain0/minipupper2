@@ -140,10 +140,13 @@ if __name__ == "__main__":
             break
 
         if not touchValue_Right:
+            counter = 30
             display_sting += ' Right'
-            msg = movement_rx_ry(0.3,0.3)
-            disp.show_image('moonphases/moon31.png')
-            pub_msg(msg,wait_time)
+            msg = movement_rx_ry(0.3, 0.3)
+            image_path = f'moonphases/moon{counter}.png'
+            disp.show_image(image_path)
+            pub_msg(msg, wait_time)
+            counter -= 1  # Decrement counter
 
         if not touchValue_Left:
             display_sting += ' Left'

@@ -149,10 +149,13 @@ if __name__ == "__main__":
             counter -= 1  # Decrement counter
 
         if not touchValue_Left:
+            counter = 36
             display_sting += ' Left'
             msg = movement_rx_ry(-0.3,-0.3)
-            disp.show_image('moonphases/moon32.png')
+            image_path = f'moonphases/moon{counter}.png'
+            disp.show_image(image_path)
             pub_msg(msg,wait_time)
+            counter += 1
 
         if display_sting == '':
             display_sting = 'No button touched'

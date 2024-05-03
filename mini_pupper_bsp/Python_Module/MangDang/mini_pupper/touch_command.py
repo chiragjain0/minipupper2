@@ -150,7 +150,7 @@ if __name__ == "__main__":
             pub_msg(msg, wait_time)
 
         if not touchValue_Left:
-            count -= 1
+            count += 1
             display_sting += ' Left'
             msg = movement_rx_ry(-0.3,-0.3)
             image_path = f'moonphases/moon{count}.png'

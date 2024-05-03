@@ -143,6 +143,8 @@ if __name__ == "__main__":
 
         if not touchValue_Right:
             count += 1  # increment counter
+            if count > 25:
+                count = 1
             display_sting += ' Right'
             msg = movement_rx_ry(0.3, 0.3)
             image_path = f'moonphases/moon{count}.png'
@@ -150,7 +152,9 @@ if __name__ == "__main__":
             pub_msg(msg, wait_time)
 
         if not touchValue_Left:
-            count += 1
+            count -= 1
+            if count < 1:
+                count = 25
             display_sting += ' Left'
             msg = movement_rx_ry(-0.3,-0.3)
             image_path = f'moonphases/moon{count}.png'

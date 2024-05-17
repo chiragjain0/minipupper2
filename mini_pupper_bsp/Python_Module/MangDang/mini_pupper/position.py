@@ -1,7 +1,9 @@
 import HardwareInterface
+from MangDang.mini_pupper.Config import ServoParams, PWMParams
+
 
 angle = 10
-servo_params = HardwareInterface.ServoParams
+servo_params = ServoParams()
 axis_index = 1
 leg_index = 2
 

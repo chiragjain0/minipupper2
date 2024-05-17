@@ -3,7 +3,7 @@ from MangDang.mini_pupper.Config import ServoParams, PWMParams
 import numpy as np
 from MangDang.mini_pupper.ESP32Interface import ESP32Interface
 
-positions = [512, 512, 0, 512, 512, 512, 512, 512, 512, 512, 512, 512]
+positions = [512, 512, 512, 512, 512, 512, 512, 512, 512, 512, 512, 512]
 esp32 = ESP32Interface()
 esp32.servos_set_position(positions)
 # joint = np.zeros((3, 4))  # Assuming 3 axes and 4 legs

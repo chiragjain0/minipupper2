@@ -4,7 +4,7 @@ from MangDang.mini_pupper.HardwareInterface import HardwareInterface
 
 hardware_interface = HardwareInterface()
 
-joint_positions = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0]*1
+joint_positions = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,1]
 
 lf1_position = joint_positions[0]
 lf2_position = joint_positions[1]

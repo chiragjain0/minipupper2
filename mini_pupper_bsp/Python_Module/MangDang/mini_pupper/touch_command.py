@@ -13,6 +13,8 @@ from display import BehaviorState
 from helper_movement import *
 import time
 import RPi.GPIO as GPIO
+from MangDang.mini_pupper.ESP32Interface import ESP32Interface
+
 
 def touch_init():
     # There are 4 areas for touch actions
@@ -132,10 +134,16 @@ if __name__ == "__main__":
         touchValue_Right = GPIO.input(touchPin_Right)
         display_sting = ''
 
+        leg_positions = [512, 512, 512, 512, 512, 512, 512, 512, 512, 512, 512, 512]
+        esp32 = ESP32Interface()
+        esp32.servos_set_position(leg_positions)
+
         if not touchValue_Front:
             display_sting += ' Front'
             disp.show_state(BehaviorState.REST)
             #play_audio('meme_out.wav')
+            leg_positions = [512, 512, 512, 512, 512, 512, 512, 512, 300, 512, 512, 300]
+            esp32.servos_set_position(leg_positions)
 
         if not touchValue_Back:
             display_sting += ' Back'

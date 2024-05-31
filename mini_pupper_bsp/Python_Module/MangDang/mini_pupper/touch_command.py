@@ -80,6 +80,7 @@ if __name__ == "__main__":
     disp = Display()
     pygame.event.pump()
     wait_time = 500
+    slowly_sit_time = 2000
     MESSAGE_RATE = 20
     counter_a = 0
     counter_m = 0
@@ -144,11 +145,16 @@ if __name__ == "__main__":
             pub_msg(msg,wait_time)
 
             disp.show_state(BehaviorState.REST)
+
             #play_audio('meme_out.wav')
-            leg_positions = [512, 512, 512, 512, 512, 512, 512, 512, 300, 512, 512, 700]
+            leg_bend = 53
+            for i in range (4):
+                leg_positions = [512, 512, 512, 512, 512, 512, 512, 512, 512-leg_bend, 512, 512, 512+leg_bend]
+                leg_bend += 53
+                pub_msg(msg, slowly_sit_time)
             esp32.servos_set_position(leg_positions)
             msg,counter_a = toggle_activation(counter_a)
-            pub_msg(msg,wait_time)
+            pub_msg(msg, wait_time)
 
 
         if not touchValue_Back:

@@ -140,10 +140,16 @@ if __name__ == "__main__":
 
         if not touchValue_Front:
             display_sting += ' Front'
+            msg,counter_a = toggle_activation(counter_a)
+            pub_msg(msg,wait_time)
+
             disp.show_state(BehaviorState.REST)
             #play_audio('meme_out.wav')
-            leg_positions = [512, 512, 512, 512, 512, 512, 512, 512, 300, 512, 512, 300]
+            leg_positions = [512, 512, 512, 512, 512, 512, 512, 512, 300, 512, 512, 700]
             esp32.servos_set_position(leg_positions)
+            msg,counter_a = toggle_activation(counter_a)
+            pub_msg(msg,wait_time)
+
 
         if not touchValue_Back:
             display_sting += ' Back'
